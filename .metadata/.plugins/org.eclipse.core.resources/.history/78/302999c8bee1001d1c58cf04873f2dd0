@@ -1,0 +1,75 @@
+package in.yh.controllers;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import in.yh.dao.AppointmentDao;
+import in.yh.dao.DoctorDao;
+import in.yh.dao.LoginDao;
+import in.yh.pojo.Appointment;
+import in.yh.pojo.Doctor;
+
+/**
+ * Servlet implementation class Appointment
+ */
+@WebServlet("/UserAppointment")
+public class AppointmentServlet extends HttpServlet {
+	 HttpSession session=null;
+	 String action=null;
+	boolean result;
+	
+	RequestDispatcher rd= null;
+	Appointment appointment=null;
+	AppointmentDao adao= new AppointmentDao();
+	int userid;
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println(action + userid);
+		if(action!=null && action.equals("show")) {
+			userid=Integer.parseInt(request.getParameter("userid"));
+			System.out.println(userid);
+			List<Appointment>alist=adao.getAllAppointmentByLoginUser(userid);
+			session.setAttribute("alist", alist);
+			System.out.println(alist);
+			rd=request.getRequestDispatcher("/jsp/viewappointment.jsp");
+			rd.forward(request, response);
+		}
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		int userid=Integer.parseInt(request.getParameter("userid"));
+		String name=request.getParameter("name");
+		String gender=request.getParameter("gender");
+		int age=Integer.parseInt(request.getParameter("age"));
+		String appointmentdate=request.getParameter("appointmentdate");
+		String email=request.getParameter("email");
+		String contact=request.getParameter("contact");
+		String disease=request.getParameter("disease");
+		int doctorid=Integer.parseInt(request.getParameter("doctorid"));
+		String address=request.getParameter("address");
+		Appointment a=new Appointment(userid, name, gender, age, appointmentdate, email, contact, disease, doctorid, address, "pending");
+		System.out.println(a);
+		AppointmentDao adao=new AppointmentDao();
+		session=request.getSession();
+		if(adao.addAppointment(a)) {
+			session.setAttribute("msg", "Appointment Sucessfull");
+			response.sendRedirect("/YouHeal/jsp/userappointment.jsp");
+			
+		}
+		else {
+			session.setAttribute("errmsg", "Appointment not Sucessfull");
+			response.sendRedirect("/YouHeal/jsp/userappointment.jsp");
+		}
+	}
+	
+
+}

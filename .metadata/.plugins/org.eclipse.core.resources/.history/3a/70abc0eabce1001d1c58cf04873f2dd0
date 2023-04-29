@@ -1,0 +1,83 @@
+package in.yh.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import in.yh.pojo.Appointment;
+import in.yh.utility.DBConnection;
+
+public class AppointmentDao {
+	Connection conn=DBConnection.getConnect();
+	ResultSet  rs=null;
+	String sql;
+	PreparedStatement ps=null;
+	int i=0;
+	
+	public boolean addAppointment(Appointment a)  {
+		try {
+		System.out.println("inside add appointment");
+		sql="insert into appointment(userid,name,gender,age,appointmentdate,email,contact,disease,doctorid,address,status) values(?,?,?,?,?,?,?,?,?,?,?)";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setInt(1, a.getUserid());
+		ps.setString(2, a.getName());
+		ps.setString(3, a.getGender());
+		ps.setInt(4, a.getAge());
+		ps.setString(5, a.getAppointmentdate());
+		ps.setString(6, a.getEmail());
+		ps.setString(7, a.getContact());
+		ps.setString(8, a.getDisease());
+		ps.setInt(9, a.getDoctorid());
+		ps.setString(10, a.getAddress());
+		ps.setString(11, a.getStatus());
+		System.out.println("Query"+ps);
+		i=ps.executeUpdate();
+		
+		if(i>0)
+			return true;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	public List<Appointment> getAllAppointmentByLoginUser(int userId) {
+		List<Appointment> list = new ArrayList<Appointment>();
+		Appointment ap = null;
+
+		try {
+
+			String sql = "select * from appointment where userid=?";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setInt(1, userId);
+
+			ResultSet rs = ps.executeQuery();
+			while (rs.next()) {
+				ap = new Appointment();
+				ap.setId(rs.getInt(1));
+				ap.setUserid(userId);
+				ap.setName(sql);
+				ap.setGender(rs.getString(4));
+				ap.setAge(rs.getInt(5));
+				ap.setAppointmentdate(rs.getString(6));
+				ap.setEmail(rs.getString(7));
+				ap.setContact(rs.getString(8));
+				ap.setDisease(rs.getString(9));
+				ap.setDoctorid(rs.getInt(10));
+				ap.setAddress(rs.getString(11));
+				ap.setStatus(rs.getString(12));
+				list.add(ap);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return list;
+	}
+	
+}

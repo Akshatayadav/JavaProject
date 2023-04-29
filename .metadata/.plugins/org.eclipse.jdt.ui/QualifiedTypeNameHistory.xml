@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="in.yh.pojo.User"/>
+    <fullyQualifiedTypeName name="in.yh.dao.UserDao"/>
+    <fullyQualifiedTypeName name="in.yh.dao.SpecialistDao"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="in.yh.pojo.Specialist"/>
+    <fullyQualifiedTypeName name="in.yh.dao.DoctorDao"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.x.protobuf.MysqlxNotice.SessionStateChanged.Parameter"/>
+    <fullyQualifiedTypeName name="in.yh.pojo.Doctor"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="in.yh.dao.LoginDao"/>
+</qualifiedTypeNameHistroy>

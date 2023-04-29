@@ -1,0 +1,294 @@
+
+Apr 16, 2023 13:12:08.428 NEW SESSION
+Apr 16, 2023 13:12:08.429 [22176:16776:0416/131208.422:ERROR:device_event_log_impl.cc(222)] [13:12:08.422] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 16, 2023 13:12:08.431 [22176:16776:0416/131208.422:ERROR:device_event_log_impl.cc(222)] [13:12:08.423] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 16, 2023 13:15:59.903 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 16, 2023 13:37:28.714 [22176:3864:0416/133728.664:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 13:37:28.867 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 13:37:28.868 ERROR: Failed parsing Certificate
+Apr 16, 2023 13:37:28.868 
+Apr 16, 2023 13:37:28.869 [22176:13308:0416/133728.664:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 13:37:28.870 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 13:37:28.871 ERROR: Failed parsing Certificate
+Apr 16, 2023 13:37:28.871 
+Apr 16, 2023 13:37:40.638 [22176:3864:0416/133740.638:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 13:37:40.639 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 13:37:40.640 ERROR: Failed parsing Certificate
+Apr 16, 2023 13:37:40.640 
+Apr 16, 2023 13:39:44.220 [22176:3864:0416/133944.219:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 13:39:44.231 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 13:39:44.232 ERROR: Failed parsing Certificate
+Apr 16, 2023 13:39:44.234 
+Apr 16, 2023 13:39:57.600 [22176:16776:0416/133957.599:ERROR:interface_endpoint_client.cc(695)] Message 5 rejected by interface blink.mojom.WidgetHost
+Apr 16, 2023 13:41:47.105 [22176:13308:0416/134147.105:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 13:41:47.106 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 13:41:47.107 ERROR: Failed parsing Certificate
+Apr 16, 2023 13:41:47.107 
+Apr 16, 2023 14:59:10.951 [22176:9100:0416/145910.149:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Apr 16, 2023 15:24:30.240 [22176:16776:0416/152430.188:ERROR:gpu_process_host.cc(942)] GPU process exited unexpectedly: exit_code=34
+Apr 16, 2023 15:48:35.02 [22176:13308:0416/154834.967:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 15:48:35.52 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 15:48:35.54 ERROR: Failed parsing Certificate
+Apr 16, 2023 15:48:35.56 
+Apr 16, 2023 15:48:35.57 [22176:15316:0416/154834.967:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 15:48:35.58 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 15:48:35.60 ERROR: Failed parsing Certificate
+Apr 16, 2023 15:48:35.61 
+Apr 16, 2023 15:48:37.114 [22176:3864:0416/154837.114:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 15:48:37.116 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 15:48:37.117 ERROR: Failed parsing Certificate
+Apr 16, 2023 15:48:37.119 
+Apr 16, 2023 16:24:22.448 [22176:3864:0416/162422.173:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 16:24:22.949 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 16:24:22.965 ERROR: Failed parsing Certificate
+Apr 16, 2023 16:24:22.967 
+Apr 16, 2023 16:24:24.719 [22176:13308:0416/162424.717:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 16:24:24.721 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 16:24:24.723 ERROR: Failed parsing Certificate
+Apr 16, 2023 16:24:24.723 
+Apr 16, 2023 16:44:48.732 [22176:19000:0416/164448.669:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 16:44:48.805 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 16:44:48.806 ERROR: Failed parsing Certificate
+Apr 16, 2023 16:44:48.808 
+Apr 16, 2023 16:49:26.945 [22176:17436:0416/164926.944:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 16:49:27.501 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 16:49:29.719 ERROR: Failed parsing Certificate
+Apr 16, 2023 16:49:29.721 
+Apr 16, 2023 16:49:30.744 [22176:3864:0416/164930.744:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 16, 2023 16:49:30.745 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 16, 2023 16:49:30.746 ERROR: Failed parsing Certificate
+Apr 16, 2023 16:49:30.746 
+
+Apr 16, 2023 20:36:19.112 NEW SESSION
+Apr 16, 2023 20:36:19.112 [1528:10040:0416/203618.888:ERROR:network_service_instance_impl.cc(541)] Network service crashed, restarting service.
+Apr 16, 2023 20:36:20.74 [1528:10040:0416/203620.073:ERROR:device_event_log_impl.cc(222)] [20:36:20.073] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 16, 2023 20:36:20.88 [1528:10040:0416/203620.074:ERROR:device_event_log_impl.cc(222)] [20:36:20.073] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 16, 2023 20:37:25.673 [1528:10040:0416/203725.671:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Connection failed (-106).
+Apr 16, 2023 20:39:16.972 [1528:7728:0416/203916.971:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 16, 2023 20:39:38.211 [1528:7728:0416/203938.210:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 16, 2023 20:40:09.395 [1528:10040:0416/204009.394:ERROR:gpu_process_host.cc(942)] GPU process exited unexpectedly: exit_code=2
+Apr 16, 2023 20:40:31.230 [1528:7728:0416/204031.228:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 16, 2023 20:42:13.774 [1528:7728:0416/204213.772:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 16, 2023 20:45:28.616 [1528:7728:0416/204528.613:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 16, 2023 20:45:51.705 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 16, 2023 20:52:23.806 [1528:7728:0416/205223.803:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 16, 2023 21:02:23.810 [1528:7728:0416/210223.808:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 16, 2023 21:12:23.818 [1528:7728:0416/211223.817:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+
+Apr 17, 2023 21:10:26.954 NEW SESSION
+Apr 17, 2023 21:10:26.955 [12780:13576:0417/211026.901:ERROR:device_event_log_impl.cc(222)] [21:10:26.901] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 17, 2023 21:10:26.978 [12780:13576:0417/211026.902:ERROR:device_event_log_impl.cc(222)] [21:10:26.902] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 17, 2023 21:11:24.615 [12780:2844:0417/211124.551:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 17, 2023 21:11:47.262 [12780:2844:0417/211147.259:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 17, 2023 21:12:00.874 [12780:13576:0417/211200.872:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Connection failed (-106).
+Apr 17, 2023 21:12:33.350 [12780:2844:0417/211233.348:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 17, 2023 21:14:33.187 [12780:2844:0417/211433.165:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 17, 2023 21:15:35.264 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 17, 2023 21:17:48.945 [12780:2844:0417/211748.944:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 17, 2023 21:25:29.840 [12780:2844:0417/212529.839:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 17, 2023 21:35:29.852 [12780:2844:0417/213529.850:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 17, 2023 21:45:29.869 [12780:2844:0417/214529.867:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 17, 2023 21:55:29.875 [12780:2844:0417/215529.874:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 17, 2023 22:00:11.144 [12780:13576:0417/220011.143:ERROR:device_event_log_impl.cc(222)] [22:00:10.718] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Apr 17, 2023 22:07:24.707 [12780:2844:0417/220724.703:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Apr 17, 2023 22:27:15.42 [12780:12652:0417/222714.941:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:27:15.70 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:27:15.73 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:27:15.75 
+Apr 17, 2023 22:27:58.293 [12780:6328:0417/222757.455:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:27:59.86 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:27:59.197 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:27:59.198 
+Apr 17, 2023 22:30:01.139 [12780:12652:0417/223001.119:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:30:01.141 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:30:01.148 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:30:01.149 
+Apr 17, 2023 22:30:02.91 [12780:12652:0417/223002.089:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:30:02.92 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:30:02.94 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:30:02.108 
+Apr 17, 2023 22:30:04.671 [12780:6096:0417/223004.670:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:30:04.672 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:30:04.672 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:30:04.673 
+Apr 17, 2023 22:30:05.525 [12780:7776:0417/223005.525:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:30:05.526 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:30:05.527 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:30:05.528 
+Apr 17, 2023 22:30:09.07 [12780:12652:0417/223009.005:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:30:09.08 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:30:09.09 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:30:09.19 
+Apr 17, 2023 22:30:10.205 [12780:6328:0417/223010.204:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:30:10.207 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:30:10.235 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:30:10.236 
+Apr 17, 2023 22:30:59.593 [12780:6328:0417/223059.522:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:30:59.594 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:30:59.668 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:30:59.669 
+Apr 17, 2023 22:31:43.796 [12780:12652:0417/223143.795:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:31:43.989 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:31:43.991 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:31:43.992 
+Apr 17, 2023 22:31:45.17 [12780:924:0417/223145.017:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:31:45.18 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:31:45.19 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:31:45.20 
+Apr 17, 2023 22:33:15.724 [12780:6328:0417/223315.711:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:33:15.726 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:33:15.727 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:33:15.883 
+Apr 17, 2023 22:33:17.474 [12780:12652:0417/223317.472:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:33:17.494 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:33:17.494 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:33:17.495 
+Apr 17, 2023 22:33:17.495 [12780:6328:0417/223317.472:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:33:17.497 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:33:17.497 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:33:17.499 
+Apr 17, 2023 22:33:18.674 [12780:14716:0417/223318.673:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:33:18.698 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:33:18.699 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:33:18.700 
+Apr 17, 2023 22:33:18.967 [12780:12652:0417/223318.948:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:33:18.970 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:33:18.971 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:33:18.972 
+Apr 17, 2023 22:33:20.12 [12780:12652:0417/223320.012:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:33:20.13 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:33:20.14 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:33:20.30 
+Apr 17, 2023 22:33:21.166 [12780:12652:0417/223321.165:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:33:21.167 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:33:21.168 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:33:21.169 
+Apr 17, 2023 22:41:49.256 [12780:6328:0417/224149.255:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:41:49.292 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:41:49.296 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:41:49.298 
+Apr 17, 2023 22:41:49.300 [12780:12652:0417/224149.255:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 17, 2023 22:41:49.302 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 17, 2023 22:41:49.303 ERROR: Failed parsing Certificate
+Apr 17, 2023 22:41:49.305 
+Apr 17, 2023 22:41:52.754 [12780:13576:0417/224152.749:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+Apr 17, 2023 22:42:00.25 [12780:2844:0417/224200.024:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Apr 17, 2023 22:42:23.367 ERROR: Client requested cancel during Invoke()
+
+Apr 18, 2023 13:01:50.727 NEW SESSION
+Apr 18, 2023 13:01:50.731 [11788:16884:0418/130150.346:ERROR:network_service_instance_impl.cc(541)] Network service crashed, restarting service.
+Apr 18, 2023 13:01:59.490 [11788:16884:0418/130159.489:ERROR:device_event_log_impl.cc(222)] [13:01:59.489] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 13:01:59.547 [11788:16884:0418/130159.490:ERROR:device_event_log_impl.cc(222)] [13:01:59.490] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 13:03:35.21 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 18, 2023 13:32:10.803 [11788:4108:0418/133210.214:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Apr 18, 2023 14:15:51.690 [11788:4108:0418/141551.689:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:16:15.736 [11788:4108:0418/141615.736:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:17:11.801 [11788:4108:0418/141711.800:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:19:03.845 [11788:4108:0418/141903.844:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:21:52.947 [11788:4108:0418/142152.946:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:28:31.675 [11788:4108:0418/142831.674:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:30:14.134 [7992:1672:0418/143014.131:ERROR:device_event_log_impl.cc(222)] [14:30:14.131] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:30:14.136 [7992:1672:0418/143014.134:ERROR:device_event_log_impl.cc(222)] [14:30:14.134] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:30:44.915 [7992:10528:0418/143044.914:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:31:07.97 [7992:10528:0418/143107.096:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:31:07.741 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 18, 2023 14:31:51.741 [7992:10528:0418/143151.739:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:33:41.542 [7992:10528:0418/143341.541:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:37:12.54 [7992:10528:0418/143712.053:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:43:29.125 [7992:10528:0418/144329.124:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:44:42.891 [16020:17000:0418/144442.891:ERROR:device_event_log_impl.cc(222)] [14:44:42.891] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:44:42.892 [16020:17000:0418/144442.891:ERROR:device_event_log_impl.cc(222)] [14:44:42.891] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:44:47.378 [16020:572:0418/144447.377:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:45:00.470 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 18, 2023 14:45:00.890 [16020:17000:0418/144500.890:ERROR:interface_endpoint_client.cc(695)] Message 5 rejected by interface blink.mojom.WidgetHost
+Apr 18, 2023 14:45:29.57 [16460:13228:0418/144529.056:ERROR:device_event_log_impl.cc(222)] [14:45:29.056] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:45:29.58 [16460:13228:0418/144529.057:ERROR:device_event_log_impl.cc(222)] [14:45:29.057] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:45:30.765 [16460:14656:0418/144530.764:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:45:37.802 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 18, 2023 14:45:53.974 [16460:14656:0418/144553.974:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:46:37.246 [16460:14656:0418/144637.245:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:47:14.273 [4848:14668:0418/144714.272:ERROR:device_event_log_impl.cc(222)] [14:47:14.272] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:47:14.275 [4848:14668:0418/144714.272:ERROR:device_event_log_impl.cc(222)] [14:47:14.272] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:47:17.147 [4848:7720:0418/144717.146:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:47:22.835 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 18, 2023 14:47:44.296 [4848:7720:0418/144744.295:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:48:31.743 [4848:7720:0418/144831.742:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:49:45.461 [3200:4568:0418/144945.461:ERROR:device_event_log_impl.cc(222)] [14:49:45.461] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:49:45.463 [3200:4568:0418/144945.461:ERROR:device_event_log_impl.cc(222)] [14:49:45.461] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:49:46.171 [3200:5240:0418/144946.171:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:49:49.237 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 18, 2023 14:50:07.212 [3200:5240:0418/145007.211:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:51:04.799 [3200:5240:0418/145104.798:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:52:42.284 [3200:5240:0418/145242.284:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:56:15.717 [3200:5240:0418/145615.716:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:57:27.137 [6416:7064:0418/145727.136:ERROR:device_event_log_impl.cc(222)] [14:57:27.136] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:57:27.138 [6416:7064:0418/145727.137:ERROR:device_event_log_impl.cc(222)] [14:57:27.136] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 14:57:27.460 [6416:3568:0418/145727.459:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:57:36.397 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 18, 2023 14:57:56.268 [6416:3568:0418/145756.217:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 14:58:37.279 [6416:3568:0418/145837.278:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 15:00:29.788 [6416:3568:0418/150029.788:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 15:05:07.228 [14292:10076:0418/150507.227:ERROR:device_event_log_impl.cc(222)] [15:05:07.226] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 15:05:07.239 [14292:10076:0418/150507.227:ERROR:device_event_log_impl.cc(222)] [15:05:07.227] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 15:05:19.518 [14292:4924:0418/150519.517:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 15:05:45.643 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 18, 2023 15:05:48.251 [14292:4924:0418/150548.251:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 15:06:32.944 [14292:4924:0418/150632.943:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 15:08:00.124 [14292:4924:0418/150800.123:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 15:12:18.14 [5396:11968:0418/151218.013:ERROR:device_event_log_impl.cc(222)] [15:12:18.013] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 15:12:18.17 [5396:11968:0418/151218.013:ERROR:device_event_log_impl.cc(222)] [15:12:18.013] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 15:12:18.361 [5396:17068:0418/151218.359:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 15:12:21.664 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 18, 2023 15:12:39.751 [5396:17068:0418/151239.750:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 15:15:13.02 [10996:14100:0418/151512.998:ERROR:device_event_log_impl.cc(222)] [15:15:12.998] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 15:15:13.03 [10996:14100:0418/151513.000:ERROR:device_event_log_impl.cc(222)] [15:15:12.999] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 15:15:15.726 [10996:16664:0418/151515.725:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 15:15:19.615 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 18, 2023 15:15:36.240 [10996:16664:0418/151536.240:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 15:16:33.335 [10996:16664:0418/151633.334:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 18, 2023 15:18:00.198 [10996:16664:0418/151800.196:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+
+Apr 18, 2023 21:21:42.404 NEW SESSION
+Apr 18, 2023 21:21:42.404 [3512:3504:0418/212141.950:ERROR:device_event_log_impl.cc(222)] [21:21:41.950] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 21:21:42.515 [3512:3504:0418/212141.950:ERROR:device_event_log_impl.cc(222)] [21:21:41.950] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 18, 2023 21:24:47.448 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 18, 2023 23:28:58.142 [3512:10200:0418/232857.300:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+
+Apr 19, 2023 21:00:53.331 NEW SESSION
+Apr 19, 2023 21:00:53.332 [14216:12160:0419/210052.883:ERROR:network_service_instance_impl.cc(541)] Network service crashed, restarting service.
+Apr 19, 2023 21:00:53.626 [14216:12160:0419/210053.625:ERROR:device_event_log_impl.cc(222)] [21:00:53.625] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 19, 2023 21:00:53.627 [14216:12160:0419/210053.626:ERROR:device_event_log_impl.cc(222)] [21:00:53.626] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 19, 2023 21:02:42.293 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 19, 2023 22:31:22.965 [14216:12160:0419/223120.884:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+Apr 23, 2023 19:13:32.805 NEW SESSION
+Apr 23, 2023 19:13:32.806 [9452:15020:0423/191331.749:ERROR:device_event_log_impl.cc(222)] [19:13:31.749] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 23, 2023 19:13:32.925 [9452:15020:0423/191332.252:ERROR:device_event_log_impl.cc(222)] [19:13:32.252] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 23, 2023 19:13:33.75 [9452:15020:0423/191333.075:ERROR:network_service_instance_impl.cc(541)] Network service crashed, restarting service.
+Apr 23, 2023 19:18:21.525 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 23, 2023 19:54:58.193 [9452:16188:0423/195457.799:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 23, 2023 19:54:58.589 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 23, 2023 19:54:58.590 ERROR: Failed parsing Certificate
+Apr 23, 2023 19:54:58.590 
+Apr 23, 2023 20:32:43.719 [9452:23080:0423/203243.398:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 23, 2023 20:32:44.168 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 23, 2023 20:32:44.169 ERROR: Failed parsing Certificate
+Apr 23, 2023 20:32:44.170 
+Apr 23, 2023 21:06:44.871 [9452:20216:0423/210644.386:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Apr 23, 2023 21:32:43.788 [9452:18164:0423/213243.605:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 23, 2023 21:32:43.908 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 23, 2023 21:32:43.909 ERROR: Failed parsing Certificate
+Apr 23, 2023 21:32:43.910 
+Apr 23, 2023 22:33:19.673 [9452:20216:0423/223319.093:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Apr 23, 2023 23:14:29.226 [9452:18256:0423/231428.282:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 23, 2023 23:14:30.400 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 23, 2023 23:14:30.400 ERROR: Failed parsing Certificate
+Apr 23, 2023 23:14:30.401 
+Apr 23, 2023 23:51:21.213 [9452:20216:0423/235120.519:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Apr 24, 2023 24:05:17.765 [9452:15020:0424/000517.764:ERROR:device_event_log_impl.cc(222)] [00:05:17.486] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Apr 24, 2023 24:24:49.268 [9452:18256:0424/002448.927:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Apr 24, 2023 24:24:49.529 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Apr 24, 2023 24:24:49.530 ERROR: Failed parsing Certificate
+Apr 24, 2023 24:24:49.531 
+Apr 24, 2023 01:26:15.422 [9452:20216:0424/012614.683:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106
+Apr 24, 2023 01:26:39.281 [9452:20216:0424/012639.153:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106

@@ -1,0 +1,12 @@
+package in.yh.pojo;
+
+public class Doctor {
+	private int id;
+	private String Name;
+	private String dob;
+	private String qualification;
+	private String Specialization;
+	private String contact;
+	private String email;
+	private String password;
+}

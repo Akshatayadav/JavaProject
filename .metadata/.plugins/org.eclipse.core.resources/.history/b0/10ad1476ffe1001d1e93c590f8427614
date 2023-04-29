@@ -1,0 +1,173 @@
+package in.yh.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+import in.yh.pojo.Doctor;
+import in.yh.utility.DBConnection;
+
+public class DoctorDao {
+	Connection conn=DBConnection.getConnect();
+	ResultSet  rs=null;
+	String sql;
+	PreparedStatement ps=null;
+	int i=0;
+	
+	public boolean addDoctor(Doctor d)  {
+		try {
+		System.out.println("inside add doctors");
+		sql="insert into doctor(name,dob,qualification,specialization,contact,email,password) values(?,?,?,?,?,?,?)";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setString(1, d.getName());
+		ps.setString(2, d.getDob());
+		ps.setString(3, d.getQualification());
+		ps.setString(4, d.getSpecialization());
+		ps.setString(5, d.getContact());
+		ps.setString(6, d.getEmail());
+		ps.setString(7, d.getPassword());
+		System.out.println("Query"+ps);
+		i=ps.executeUpdate();
+		
+		if(i>0)
+			return true;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	public boolean deleteDoctor(int id) {
+		try {
+		sql="delete from doctor where id=?";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setInt(1, id);
+		i=ps.executeUpdate();
+		if(i>0)
+			return true;
+		
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+		
+	}
+	
+	public boolean updateDoctor(Doctor d) {
+		System.out.println("Inside update doc");
+		 sql="update doctor set name=? ,dob=? ,qualification=?,specialization=? ,contact=?, email=? ,password=? where id=?";
+		 try {
+			ps=conn.prepareStatement(sql);
+			ps.setString(1, d.getName());
+			ps.setString(2, d.getDob());
+			ps.setString(3, d.getQualification());
+			ps.setString(4, d.getSpecialization());
+			ps.setString(5, d.getContact());
+			ps.setString(6, d.getEmail());
+			ps.setString(7, d.getPassword());
+			ps.setInt(8, d.getId());
+			
+			i=ps.executeUpdate();
+			System.out.println(sql);
+			if(i>0)
+				return true;
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		 
+			 return false;
+		 
+	 }
+	public Doctor searchDoctorById(int id) {
+		System.out.println("inside search doc by id");
+		Doctor d=null;
+		sql="select * from doctor where id=?";
+		
+		try {
+			ps=conn.prepareStatement(sql);
+			ps.setInt(1, id);
+			rs=ps.executeQuery();
+			while(rs.next()) {
+				d=new Doctor();
+				d.setId(rs.getInt(1));
+				d.setName(rs.getString(2));
+				d.setDob(rs.getString(3));
+				d.setQualification(rs.getString(4));
+				d.setSpecialization(rs.getString(5));
+				d.setContact(rs.getString(6));
+				d.setEmail(rs.getString(7));
+				d.setPassword(rs.getString(8));
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return d;
+		
+		
+	}
+	
+	public Doctor searchDoctorByEmail(String email) {
+		System.out.println("inside search doc by id");
+		Doctor d=null;
+		sql="select * from doctor where email=?";
+		
+		try {
+			ps=conn.prepareStatement(sql);
+			ps.setString(1, email);
+			rs=ps.executeQuery();
+			while(rs.next()) {
+				d=new Doctor();
+				d.setId(rs.getInt(1));
+				d.setName(rs.getString(2));
+				d.setDob(rs.getString(3));
+				d.setQualification(rs.getString(4));
+				d.setSpecialization(rs.getString(5));
+				d.setContact(rs.getString(6));
+				d.setEmail(rs.getString(7));
+				d.setPassword(rs.getString(8));
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return d;
+		
+		
+	}
+	
+	public List<Doctor> showDoctor(){
+		List<Doctor> dlist=new ArrayList<Doctor>();
+				try {
+					sql="select * from doctor";
+					ps=conn.prepareStatement(sql);
+					rs=ps.executeQuery();
+					while(rs.next()) {
+						Doctor d=new Doctor();
+						d.setId(rs.getInt(1));
+						d.setName(rs.getString(2));
+						d.setDob(rs.getString(3));
+						d.setQualification(rs.getString(4));
+						d.setSpecialization(rs.getString(5));
+						d.setContact(rs.getString(6));
+						d.setEmail(rs.getString(7));
+						d.setPassword(rs.getString(8));
+						dlist.add(d);
+					}
+				}
+				catch(SQLException e) {
+					 e.printStackTrace();
+				 }
+				 return dlist;
+	}
+	
+}

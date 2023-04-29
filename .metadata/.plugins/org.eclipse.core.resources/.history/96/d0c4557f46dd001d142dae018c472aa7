@@ -1,0 +1,39 @@
+package in.yh.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import in.yh.pojo.User;
+import in.yh.utility.DBConnection;
+
+public class SpecialistDao {
+	Connection conn=DBConnection.getConnect();
+	ResultSet  rs=null;
+	String sql;
+	PreparedStatement ps=null;
+	int i=0;
+	boolean result;
+	
+	public boolean addSpecialist(String spec) {
+		System.out.println("Inside Register User");
+		try {
+		
+		sql="insert into specialist(spec_name)values(?)";
+		ps=conn.prepareStatement(sql);
+		ps.setString(1,spec);
+		
+		
+		System.out.println("Query"+ps);
+		i=ps.executeUpdate();
+		
+		if(i>0)
+			return true;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+}

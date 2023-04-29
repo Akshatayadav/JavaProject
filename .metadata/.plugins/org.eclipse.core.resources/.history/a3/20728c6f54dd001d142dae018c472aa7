@@ -1,0 +1,40 @@
+package in.yh.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import in.yh.pojo.Doctor;
+import in.yh.utility.DBConnection;
+
+public class DoctorDao {
+	Connection conn=DBConnection.getConnect();
+	ResultSet  rs=null;
+	String sql;
+	PreparedStatement ps=null;
+	int i=0;
+	
+	public boolean addDoctor(Doctor d)  {
+		try {
+		sql="insert into doctor(name,dob,qualification,specialist,email,contact,password) values(?,?,?,?,?,?,?)";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setString(1, d.getName());
+		ps.setString(2, d.getDob());
+		ps.setString(3, d.getQualification());
+		ps.setString(4, d.getSpecialization());
+		ps.setString(5, d.getEmail());
+		ps.setString(6, d.getContact());
+		ps.setString(7, d.getPassword());
+		System.out.println("Query"+ps);
+		i=ps.executeUpdate();
+		
+		if(i>0)
+			return true;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+}

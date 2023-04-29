@@ -1,0 +1,156 @@
+package in.yh.controllers;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.mysql.cj.x.protobuf.MysqlxNotice.SessionStateChanged.Parameter;
+
+import in.yh.dao.DoctorDao;
+import in.yh.dao.LoginDao;
+import in.yh.pojo.Doctor;
+
+/**
+ * Servlet implementation class Doctor
+ */
+@WebServlet("/Doctor")
+public class DoctorServlet extends HttpServlet {
+	String action=null;
+	boolean result;
+	HttpSession session=null;
+	RequestDispatcher rd= null;
+	Doctor doctor=null;
+	DoctorDao dao= new DoctorDao();
+	LoginDao ldao=new LoginDao();
+	int id;
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		action=request.getParameter("action");
+		session=request.getSession();
+		if(action!=null && action.equals("delete")) {
+			int id=Integer.parseInt(request.getParameter("id"));
+			result=dao.deleteDoctor(id);
+			if(result) {
+				session.setAttribute("msg", "Deleted sucessfully");
+				 System.out.println("Deleted");
+				 List<Doctor>dlist=dao.showDoctor();
+					session.setAttribute("dlist", dlist);
+					System.out.println(dlist);
+					rd=request.getRequestDispatcher("/jsp/showdoctor.jsp");
+					rd.forward(request, response);
+			}
+			
+		}
+		
+		if(action!=null && action.equals("edit")) {
+			id=Integer.parseInt(request.getParameter("id"));
+			System.out.println(id);
+			doctor=dao.searchDoctorById(id);
+			System.out.println(doctor);
+			//List<Product>productlist=pdao.showProductList();
+			session.setAttribute("doctor", doctor);
+			rd=request.getRequestDispatcher("/jsp/updatedoctor.jsp");
+			rd.forward(request, response);
+		}
+		else {
+			session.setAttribute("msg", "Unable to delete ");
+			 System.out.println("not Deleted");
+			 List<Doctor>dlist=dao.showDoctor();
+				session.setAttribute("dlist", dlist);
+				System.out.println(dlist);
+				rd=request.getRequestDispatcher("/jsp/showdoctor.jsp");
+				rd.forward(request, response);
+		}
+	}
+	
+	
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		action=request.getParameter("action");
+		session=request.getSession();
+		System.out.println(request.getParameter("name"));
+		System.out.println(session +" "+ action);
+		if(action!=null && action.equals("adddoctor")) {
+			String name=request.getParameter("name");
+			String dob=request.getParameter("dob");
+			System.out.println(name);
+			String qualification=request.getParameter("qualification");
+			String specialization=request.getParameter("spec");
+			String email=request.getParameter("email");
+			String contact=request.getParameter("contact");
+			String password=request.getParameter("password");
+			doctor=new Doctor(name, dob, qualification, specialization, contact, email, password);
+			result=dao.addDoctor(doctor);
+			if(result) {
+				 session.setAttribute("msg", "Added sucessfully");
+				 System.out.println("Added");
+				 response.sendRedirect("/YouHeal/jsp/adddoctor.jsp");
+				 
+			 }
+			 else
+				{
+					session.setAttribute("errmsg", " not added sucessfully");
+					System.out.println("not added");
+					response.sendRedirect("/YouHeal/jsp/adddoctor.jsp");
+				}
+			 
+		}
+		
+		if(action!=null && action.equals("updatedoctor")) {
+			System.out.println("Inside update session");
+			int id=Integer.parseInt(request.getParameter("id"));
+			String name=request.getParameter("name");
+			String dob=request.getParameter("dob");
+			String qualification=request.getParameter("qualification");
+			String specialization=request.getParameter("spec");
+			String email=request.getParameter("email");
+			String contact=request.getParameter("contact");
+			String password=request.getParameter("password");
+			doctor=new Doctor(id,name, dob, qualification, specialization, contact, email, password);
+			System.out.println(doctor);
+			result=dao.updateDoctor(doctor);
+			if(result) {
+				 session.setAttribute("msg", "Updated sucessfully");
+				 System.out.println("Added");
+				 response.sendRedirect("/YouHeal/jsp/showdoctor.jsp");
+				 
+			 }
+			 else
+				{
+					session.setAttribute("errmsg", " not updated sucessfully");
+					System.out.println("not added");
+					response.sendRedirect("/YouHeal/jsp/updatedoctor.jsp");
+				}
+			 
+		}
+		
+		if(action!=null && action.equals("userlogin")) {
+			String email=request.getParameter("email");
+			String password=request.getParameter("password");
+			result=ldao.isDoctor(email, password);
+			session=request.getSession();
+			if(result) {
+				session.setAttribute("user",email );
+				response.sendRedirect("/YouHeal/jsp/doctorindex.jsp");
+			}
+			else {
+				session.setAttribute("errmsg","Invalid Email and Password" );
+				response.sendRedirect("/YouHeal/jsp/doctorlogin.jsp");
+			}
+		
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,66 @@
+package in.yh.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import in.yh.pojo.*;
+
+import in.yh.utility.DBConnection;
+
+public class SpecialistDao {
+	Connection conn=DBConnection.getConnect();
+	ResultSet  rs=null;
+	String sql;
+	PreparedStatement ps=null;
+	int i=0;
+	boolean result;
+	
+	public boolean addSpecialist(String spec) {
+		System.out.println("Inside Register User");
+		try {
+		
+		sql="insert into specialist(spec_name)values(?)";
+		ps=conn.prepareStatement(sql);
+		ps.setString(1,spec);
+		
+		
+		System.out.println("Query"+ps);
+		i=ps.executeUpdate();
+		
+		if(i>0)
+			return true;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	public List<Specalist> getAllSpecialist() {
+		List<Specalist> list = new ArrayList<Specalist>();
+		Specalist s = null;
+
+		try {
+			String sql = "select * from specialist";
+			PreparedStatement ps = conn.prepareStatement(sql);
+
+			ResultSet rs = ps.executeQuery();
+
+			while (rs.next()) {
+				s = new Specalist();
+				s.setId(rs.getInt(1));
+				s.setSpecialistName(rs.getString(2));
+				list.add(s);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return list;
+	}
+
+}
